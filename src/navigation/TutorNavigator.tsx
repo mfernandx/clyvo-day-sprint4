@@ -13,6 +13,7 @@ import { CommunityPostCreateScreen } from '../screen/community/CommunityPostCrea
 import { PetMonitoringCreateScreen } from '../screen/tutor/PetMonitoringCreateScreen';
 import { AchievementsScreen } from '../screen/tutor/AchievementsScreen';
 import { CareEventCreateScreen } from '../screen/tutor/CareEventCreateScreen';
+import { NotificationSettingsScreen } from '../screen/tutor/NotificationSettingsScreen';
 
 const Tab = createBottomTabNavigator<TutorTabParamList>();
 const Stack = createNativeStackNavigator<TutorStackParamList>();
@@ -95,6 +96,8 @@ export function TutorNavigator() {
             <Stack.Screen name="Achievements" component={AchievementsScreen}/>
             
             <Stack.Screen name="CareEventCreate" component={CareEventCreateScreen}/>
+
+            <Stack.Screen name="NotificationSettings" component={NotificationSettingsScreen} options={{ title: 'Notificações', headerBackTitle: 'Voltar' }}/>
         </Stack.Navigator>
     );
 }

@@ -21,6 +21,7 @@ export type TutorStackParamList = {
     PetMonitoringCreate: {petId: number;};
     Achievements: undefined;
     CareEventCreate: {petId: number;};
+    NotificationSettings: undefined;
 };
 
 export type VeterinarianTabParamList = {

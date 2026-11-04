@@ -12,6 +12,7 @@ import { NextCareEventCard } from '../../components/NextCareEventCard';
 import { useDailyPetLogs } from '../../hooks/useDailyPetLog';
 import { calculateCareStreak } from '../../utils/calc/calcCareStreak';
 import { CareStreakCard } from '../../components/CareStreakCard';
+import { notificationService } from '../../service/notificationService';
 
 export function TutorHomeScreen() {
     const navigation =useNavigation<NativeStackNavigationProp<TutorStackParamList>>();
@@ -43,14 +44,11 @@ export function TutorHomeScreen() {
                         
                     </View>
 
-                    
-                    <TouchableOpacity style={styles.headerButton} activeOpacity={0.8}>
-                        <Ionicons name="notifications-outline" size={23} color="#2877E6"/>
+                    <TouchableOpacity style={styles.headerButton} activeOpacity={0.8} onPress={() => navigation.navigate('NotificationSettings')}>
+                        <Ionicons name="notifications-outline" size={23} color="#2877E6" />
                     </TouchableOpacity>
                     
                 </View>
-
-
 
                 <View style={styles.cardPrincipal}>
                     
