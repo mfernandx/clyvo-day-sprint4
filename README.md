@@ -12,6 +12,7 @@ O aplicativo conecta **Tutores** e **Veterinários** em uma experiência única,
 
 - [Sobre o projeto](#-sobre-o-projeto)
 - [Objetivos](#-objetivos)
+- [Vídeo de demonstração](#-vídeo-de-demonstração)
 - [Perfis de usuário](#-perfis-de-usuário)
 - [Principais funcionalidades](#-principais-funcionalidades)
 - [Tecnologias utilizadas](#️-tecnologias-utilizadas)
@@ -27,12 +28,10 @@ O aplicativo conecta **Tutores** e **Veterinários** em uma experiência única,
 - [Gamificação](#-gamificação)
 - [Validação e tratamento de erros](#-validação-e-tratamento-de-erros)
 - [Como executar o projeto](#️-como-executar-o-projeto)
-- [Configuração da API](#️-configuração-da-api)
 - [Executando no Android](#-executando-no-android)
 - [Backend](#️-backend)
 - [Segurança](#-segurança)
 - [Boas práticas adotadas](#-boas-práticas-adotadas)
-- [Melhorias futuras](#-melhorias-futuras)
 
 ---
 
