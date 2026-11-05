@@ -1075,6 +1075,125 @@ O computador e o dispositivo geralmente precisam estar na mesma rede local e o b
 
 ---
 
+# 🚀 Deploy e Distribuição do Aplicativo
+
+O **CLYVO DAY** possui uma versão Android compilada e disponibilizada para testes por meio do **Firebase App Distribution**, utilizando o **Expo Application Services (EAS Build)** para gerar o arquivo APK.
+
+Essa estratégia permite distribuir o aplicativo para testadores autorizados sem a necessidade de publicá-lo na Google Play Store.
+
+## 🛠️ Tecnologias utilizadas no deploy
+
+| Tecnologia | Finalidade |
+|---|---|
+| **Expo EAS Build** | Compilação do aplicativo React Native e geração do APK Android. |
+| **Firebase App Distribution** | Distribuição de versões de teste para usuários convidados. |
+| **Firebase Console** | Gerenciamento das versões publicadas e dos testadores. |
+| **Android Keystore** | Assinatura digital do aplicativo Android. |
+
+## 📱 Configuração do Android
+
+O aplicativo foi configurado no arquivo `app.json` com os seguintes identificadores:
+
+```json
+{
+  "android": {
+    "package": "com.clyvoday.app",
+    "versionCode": 1
+  }
+}
+```
+
+O identificador `com.clyvoday.app` também foi utilizado no cadastro do aplicativo Android no Firebase.
+
+## 📦 Geração do APK com EAS Build
+
+O processo de compilação utiliza o perfil `preview` definido no arquivo `eas.json`:
+
+```json
+{
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  }
+}
+```
+
+Para gerar uma nova versão Android, execute:
+
+```bash
+eas build --platform android --profile preview
+```
+
+O EAS Build realiza a compilação na nuvem e gera um APK assinado digitalmente.
+
+Após a conclusão da build, o arquivo pode ser baixado pelo [Expo Dashboard](https://expo.dev/).
+
+## 🔥 Distribuição pelo Firebase App Distribution
+
+O APK gerado é enviado ao Firebase App Distribution, responsável por disponibilizar a versão aos testadores convidados.
+
+O processo de distribuição consiste em:
+
+1. Acessar o [Firebase Console](https://console.firebase.google.com/).
+2. Selecionar o projeto `clyvo-day-app`.
+3. Abrir o **Firebase App Distribution**.
+4. Realizar o upload do APK gerado pelo EAS Build.
+5. Cadastrar os e-mails dos testadores autorizados.
+6. Adicionar as notas da versão.
+7. Distribuir a versão para os testadores selecionados.
+
+Os testadores convidados recebem instruções por e-mail para acessar e instalar o aplicativo em dispositivos Android compatíveis.
+
+## 👥 Testadores
+
+A distribuição é restrita aos usuários convidados no Firebase App Distribution.
+
+Para atender aos requisitos acadêmicos do projeto, o e-mail institucional do professor pode ser cadastrado como testador, permitindo que ele instale e avalie o aplicativo.
+
+## 🔄 Fluxo de deploy
+
+```text
+Código-fonte (React Native + Expo)
+                |
+                v
+      Configuração do EAS Build
+                |
+                v
+       Compilação na nuvem
+                |
+                v
+       Geração do APK Android
+                |
+                v
+      Firebase App Distribution
+                |
+                v
+       Convite aos testadores
+                |
+                v
+    Instalação no dispositivo Android
+```
+
+## 📋 Informações da versão
+
+| Informação | Valor |
+|---|---|
+| Aplicativo | CLYVO DAY |
+| Versão | 1.0.0 |
+| Plataforma | Android |
+| Formato | APK |
+| Perfil de build | Preview |
+| Serviço de compilação | Expo EAS Build |
+| Serviço de distribuição | Firebase App Distribution |
+| Identificador Android | `com.clyvoday.app` |
+| Status da build | Finished |
+
+---
+
 # 🖥️ Backend
 
 O frontend depende da API do CLYVO DAY.
