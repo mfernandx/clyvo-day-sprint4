@@ -1,16 +1,17 @@
 {
   "expo": {
-    "name": "clyvo-day-app",
+    "name": "CLYVO DAY",
     "slug": "clyvo-day-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "package": "com.clyvoday.app",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -24,6 +25,11 @@
       "expo-font",
       "expo-status-bar",
       "expo-notifications"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "c8305556-f4d2-4996-a7a7-dc6492ae28a1"
+      }
+    }
   }
 }

@@ -53,8 +53,8 @@ export const notificationService = {
         },
         trigger: {
             type: Notifications.SchedulableTriggerInputTypes.DAILY,
-            hour: 19,
-            minute: 0,
+            hour: 22,
+            minute: 36,
             channelId: 'care-reminders',
         },
     });
@@ -71,8 +71,8 @@ async scheduleAgendaReminder() {
         },
         trigger: {
             type: Notifications.SchedulableTriggerInputTypes.DAILY,
-            hour: 9,
-            minute: 0,
+            hour: 22,
+            minute: 38,
             channelId: 'care-reminders',
         },
     });
