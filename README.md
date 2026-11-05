@@ -73,7 +73,7 @@ O CLYVO DAY busca:
 
 Para visualizar o funcionamento do CLYVO DAY na prática, acesse o vídeo de demonstração do projeto:
 
-👉 [Assistir ao vídeo de demonstração](https://youtube.com/shorts/vrxzhxXuXZ0)
+👉 [Assistir ao vídeo de demonstração](https://youtu.be/ZdBk8hItJak?si=tl_HDeu02aIoJorE)
 
 ---
 
@@ -979,7 +979,7 @@ git --version
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/mfernandx/clyvo-day-sprint3.git
+git clone https://github.com/mfernandx/clyvo-day-sprint4.git
 ```
 
 Entre na pasta:
