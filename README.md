@@ -1024,23 +1024,7 @@ O comando verifica possíveis incompatibilidades entre:
 
 ---
 
-## 4. Configurar a API
-
-Antes de executar o aplicativo, confira a URL configurada no cliente Axios.
-
-Exemplo:
-
-```ts
-export const api = axios.create({
-    baseURL: 'http://10.0.2.2:10000',
-});
-```
-
-O endereço depende do ambiente utilizado.
-
----
-
-## 5. Iniciar a aplicação
+## 4. Iniciar a aplicação
 
 ```bash
 npx expo start
@@ -1113,15 +1097,11 @@ A API é responsável por:
 - pontuação;
 - conquistas.
 
-A documentação interativa da API pode ser acessada através do **Scalar** quando o backend estiver em execução.
-
-Exemplo em ambiente local:
+A documentação interativa da API pode ser acessada através do link:
 
 ```text
-http://localhost:10000/scalar
+https://clyvo-day-api.azurewebsites.net/scalar
 ```
-
-> O endereço acima é acessado pelo navegador do computador. Ele não deve ser utilizado como `baseURL` do Axios, pois `/scalar` corresponde à interface de documentação, e não à raiz da API.
 
 ---
 
@@ -1216,36 +1196,6 @@ A interface foi construída com:
 - hierarquia visual simples.
 
 A intenção é evitar a aparência de um sistema clínico excessivamente técnico e apresentar o acompanhamento do pet como uma **jornada de cuidado**.
-
----
-
-# 🚧 Melhorias futuras
-
-Algumas funcionalidades podem ser expandidas futuramente:
-
-- seleção de pet ativo na Home;
-- sequência de cuidado calculada diretamente pelo backend;
-- associação formal entre Veterinários e pacientes;
-- notificações para eventos de cuidado;
-- lembretes de vacinação;
-- lembretes de consultas;
-- upload real de imagens;
-- foto de perfil;
-- fotos dos pets;
-- expansão da Jornada;
-- filtros por período;
-- histórico completo de CheckUps;
-- acompanhamento gráfico da evolução do peso;
-- evolução dos indicadores de saúde;
-- novas métricas de Insights;
-- detalhes de pacientes para Veterinários;
-- paginação da comunidade;
-- sistema de comentários;
-- curtidas;
-- atualização e exclusão de publicações;
-- gerenciamento completo de eventos de cuidado;
-- acessibilidade;
-- testes automatizados do frontend.
 
 ---
 
