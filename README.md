@@ -1242,40 +1242,6 @@ A intenção é evitar a aparência de um sistema clínico excessivamente técni
 
 ---
 
-# 🧪 Testando a integração
-
-Para testar a aplicação corretamente:
-
-1. inicie o backend;
-2. confirme que a API está respondendo;
-3. abra o Scalar e teste os endpoints necessários;
-4. configure o endereço correto no Axios;
-5. inicie o Expo;
-6. realize o cadastro ou login;
-7. verifique a persistência da sessão;
-8. teste operações autenticadas;
-9. confira se alterações aparecem novamente após refetch.
-
-Para iniciar o frontend:
-
-```bash
-npx expo start
-```
-
-Para limpar cache:
-
-```bash
-npx expo start -c
-```
-
-Para verificar a configuração:
-
-```bash
-npx expo-doctor
-```
-
----
-
 # 🐾 Conceito do CLYVO DAY
 
 O CLYVO DAY parte da ideia de que o cuidado não acontece somente durante uma consulta.
